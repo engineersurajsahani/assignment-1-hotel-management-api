@@ -1,1 +1,4 @@
 Assignment 1 :- Hotel Management API
+by ADITYA SUNIL CHOUKSEY
+roll no 150096725070
+cohort SAM ALTMAN
