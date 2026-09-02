@@ -1,0 +1,25 @@
+{
+  "name": "harsh-assignment-1-hotel-management-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh4421/Harsh-Assignment-1-Hotel-Management-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harsh4421/Harsh-Assignment-1-Hotel-Management-API/issues"
+  },
+  "homepage": "https://github.com/harsh4421/Harsh-Assignment-1-Hotel-Management-API#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "express": "^5.2.1"
+  }
+}
