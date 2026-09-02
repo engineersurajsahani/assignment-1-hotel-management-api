@@ -1,0 +1,16 @@
+{
+  "name": "hotel-management-api-root",
+  "version": "1.0.0",
+  "description": "Hotel Management REST API Root Wrapper",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "cd Raj_Rasal_150096725066 && npm install",
+    "build": "cd Raj_Rasal_150096725066 && npm install",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0"
+  }
+}
