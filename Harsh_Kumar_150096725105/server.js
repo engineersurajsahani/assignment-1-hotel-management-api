@@ -77,10 +77,10 @@ app.post("/hotels", (req, res) => {
   }
 });
 
-app.use(express.static("public"));
-
 app.get("/", (req, res) => {
-    res.sendFile("index.html", { root: "public" });
+    res.status(200).json({
+        message: "Welcome to Hotel Management API"
+    });
 });
 
 app.get("/Hotels", (req, res) => {
