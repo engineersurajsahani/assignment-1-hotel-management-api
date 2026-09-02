@@ -4,7 +4,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require('bcryptjs');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -26,7 +26,7 @@ passport.use(new LocalStrategy((username, password, done) => {
         return done(null, false, { message: 'Incorrect username.' });
     }
 
-\
+
     const isMatch = bcrypt.compareSync(password, user.password);
     if (!isMatch) {
         return done(null, false, { message: 'Incorrect password.' });
@@ -157,6 +157,6 @@ app.delete('/hotels/:id', (req, res) => {
     res.status(200).json({ message: "Hotel deleted successfully!" });
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`Server running on port ${port}`);
 });
